@@ -12,3 +12,8 @@ $ google-chrome-stable --remote-debugging-port=9899
 In a python console, you can connect to the remote debugging port and enable the Page domain.
 
 > devtools_client = ChromeInterface(9899, domains={"Page": {}})
+
+Or more generally you can call remote methods according to the devtools protocol spec (https://chromedevtools.github.io/devtools-protocol/tot/Network), for example
+
+> devtools_client.execute(domain="Network", method="enable")
+> devtools_client.execute("Network", "setUserAgentOverride", {"userAgent": "Test"})
