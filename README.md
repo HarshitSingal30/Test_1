@@ -15,5 +15,5 @@ In a python console, you can connect to the remote debugging port and enable the
 
 # The client provides some devtools interface methods, for example:
 
->> with devtools_client.set_timeout(10):
+> with devtools_client.set_timeout(10):
    ... devtools_client.take_screenshot("/tmp/screenshot.png")
