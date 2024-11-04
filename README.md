@@ -13,6 +13,15 @@ In a python console, you can connect to the remote debugging port and enable the
 
 > devtools_client = ChromeInterface(9899, domains={"Page": {}})
 
+
+# Running Tests
+
+The test.sh script makes running tests easier, it will create containers with the required environment; and run a virtual display for the E2E tests.
+
+It takes a single argument which is a pytest expression to run a subset of tests, for example:
+
+./test.sh e2etests/chrome/test_interface.py::TestSwitchTabHeaded::test_switch_tab_headed
+
 # The client provides some devtools interface methods, for example:
 
 > with devtools_client.set_timeout(10):
