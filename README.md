@@ -13,8 +13,6 @@ In a python console, you can connect to the remote debugging port and enable the
 
 > devtools_client = ChromeInterface(9899, domains={"Page": {}})
 
-# Contributing
-
 # Running Tests
 
 The test.sh script makes running tests easier, it will create containers with the required environment; and run a virtual display for the E2E tests.
