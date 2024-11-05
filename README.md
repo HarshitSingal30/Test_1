@@ -31,3 +31,5 @@ Or more generally you can call remote methods according to the devtools protocol
 
 > devtools_client.execute(domain="Network", method="enable")
 > devtools_client.execute("Network", "setUserAgentOverride", {"userAgent": "Test"})
+>
+> Harshit 
